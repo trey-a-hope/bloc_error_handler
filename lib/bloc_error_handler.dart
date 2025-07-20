@@ -26,7 +26,7 @@ Future<void> catchError<T extends ErrorState>({
     final errorMessage = e.message ?? 'Request timed out, please try again';
     emit(state.copyWith(error: errorMessage) as T);
   } catch (e) {
-    final errorMessage = 'Unexpected error: ${e.toString()}';
+    final errorMessage = e.toString();
     emit(state.copyWith(error: errorMessage) as T);
   }
 }
