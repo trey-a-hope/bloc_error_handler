@@ -1,7 +1,7 @@
 name: bloc_error_handler
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/yourusername/bloc_error_handler
 
 environment:
   sdk: ^3.8.1
