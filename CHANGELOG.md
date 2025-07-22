@@ -1,3 +1,7 @@
+## 0.0.3
+
+* runWithErrorHandling is asynchronous.
+
 ## 0.0.2
 
 * runWithErrorHandling (synchronous) has replaced catchError (asynchronous).
