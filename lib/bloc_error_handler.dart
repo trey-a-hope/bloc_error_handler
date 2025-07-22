@@ -6,13 +6,25 @@ import 'dart:async';
 
 part 'entities/error_state.dart';
 
+void runWithErrorHandling<T extends ErrorState>({
+  required Future<void> Function() action,
+  required Emitter<T> emit,
+  required T state,
+}) {
+  action().catchError((e) {
+    final errorMessage = _getErrorMessage(e);
+    emit(state.copyWith(error: errorMessage) as T);
+  });
+}
+
+@Deprecated('Should use runWithErrorHandling')
 Future<void> catchError<T extends ErrorState>({
   required Future<void> Function() action,
   required Emitter<T> emit,
   required T state,
 }) async {
   try {
-    return await action();
+    return action();
   } catch (e) {
     final errorMessage = _getErrorMessage(e);
     emit(state.copyWith(error: errorMessage) as T);

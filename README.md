@@ -1,2 +1,2 @@
 # url
-https://pub.dev/packages/firebase_storage_wrapper
+https://pub.dev/packages/bloc_error_handler
