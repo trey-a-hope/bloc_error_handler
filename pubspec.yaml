@@ -1,6 +1,6 @@
 name: bloc_error_handler
 description: "Bloc event handler for emitting new error states and reducing boiler plate"
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/yourusername/bloc_error_handler
 
 environment:
