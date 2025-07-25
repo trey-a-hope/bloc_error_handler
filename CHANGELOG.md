@@ -1,3 +1,7 @@
+## 0.0.4
+
+* async bug fixed
+
 ## 0.0.3
 
 * runWithErrorHandling is asynchronous.
