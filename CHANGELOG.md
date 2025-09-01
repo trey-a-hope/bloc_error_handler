@@ -1,3 +1,7 @@
+## 0.0.5
+
+* integrate logger for enhanced error logging in runWithErrorHandling function, improving error handling clarity and maintainability.
+
 ## 0.0.4
 
 * async bug fixed

@@ -1,6 +1,6 @@
 name: bloc_error_handler
 description: "Bloc event handler for emitting new error states and reducing boiler plate"
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/yourusername/bloc_error_handler
 
 environment:
@@ -13,6 +13,7 @@ dependencies:
   dio: ^5.8.0+1
   flutter_bloc: ^9.1.1
   grpc: ^4.1.0
+  logger: ^2.6.1
 
 dev_dependencies:
   flutter_test:
