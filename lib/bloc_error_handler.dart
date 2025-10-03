@@ -37,7 +37,7 @@ Future<void> runWithErrorHandling<T extends ErrorState>({
     _logger.e(errorMessage);
     emit(state.copyWith(error: errorMessage) as T);
   } catch (e) {
-    final errorMessage = 'Unexpected error: ${e.toString()}';
+    final errorMessage = e.toString();
     _logger.e(errorMessage);
     emit(state.copyWith(error: errorMessage) as T);
   }

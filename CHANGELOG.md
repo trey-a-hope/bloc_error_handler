@@ -1,3 +1,7 @@
+## 0.0.6
+
+* Refactor error message handling in runWithErrorHandling to simplify error logging by removing the prefix 'Unexpected error: ', enhancing clarity in error reporting.
+
 ## 0.0.5
 
 * integrate logger for enhanced error logging in runWithErrorHandling function, improving error handling clarity and maintainability.
